@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "farming-mod",
+	"version": "${version}",
+	"name": "Farming Mod",
+	"description": "The Mod add special Farming features",
+	"authors": [
+		"Craftlegend"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/farming-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.craftlegend.farmingmod.FarmingMod"
+		],
+		"client": [
+			"de.craftlegend.farmingmod.FarmingModClient"
+		],
+		"fabric-datagen": [
+			"de.craftlegend.farmingmod.FarmingModDataGenerator"
+		]
+	},
+	"mixins": [
+		"farming-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

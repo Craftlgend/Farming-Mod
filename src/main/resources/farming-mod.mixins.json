@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "de.craftlegend.farmingmod.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
