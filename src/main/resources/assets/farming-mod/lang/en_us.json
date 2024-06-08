@@ -1,4 +1,5 @@
 {
     "item.farming-mod.ruby": "Ruby",
-    "itemgroup.ruby": "ExampleGroup"
+    "itemgroup.ruby": "ExampleGroup",
+    "block.farming-mod.ruby_block": "Block of Ruby"
 }

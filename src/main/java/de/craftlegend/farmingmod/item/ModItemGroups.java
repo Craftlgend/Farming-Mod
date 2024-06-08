@@ -1,6 +1,7 @@
 package de.craftlegend.farmingmod.item;
 
 import de.craftlegend.farmingmod.FarmingMod;
+import de.craftlegend.farmingmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -15,6 +16,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
+
+                        entries.add(ModBlocks.RUBY_BLOCK);
                     }).build());
 
 

@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.craftlegend.farmingmod.block.ModBlocks;
 import de.craftlegend.farmingmod.item.ModItemGroups;
 import de.craftlegend.farmingmod.item.ModItems;
 
@@ -16,5 +17,6 @@ public class FarmingMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
