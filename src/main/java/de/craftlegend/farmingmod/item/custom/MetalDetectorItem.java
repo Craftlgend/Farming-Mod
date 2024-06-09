@@ -1,11 +1,15 @@
 package de.craftlegend.farmingmod.item.custom;
 
+import java.util.List;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.item.TooltipType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -51,4 +55,11 @@ public class MetalDetectorItem extends Item{
     private boolean isValuableBlock(BlockState state) {
         return state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.DIAMOND_ORE);
     }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        tooltip.add(Text.translatable("tooltip.farming-mod.metal_detector.tooltip"));
+        super.appendTooltip(stack, context, tooltip, type);
+    }
+
 }
