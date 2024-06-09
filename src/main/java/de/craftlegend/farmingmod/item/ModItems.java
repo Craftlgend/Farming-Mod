@@ -2,6 +2,7 @@ package de.craftlegend.farmingmod.item;
 
 
 import de.craftlegend.farmingmod.FarmingMod;
+import de.craftlegend.farmingmod.item.costom.MetalDetectorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -12,6 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
+    public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new Item.Settings().maxDamage(64)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(RUBY);
