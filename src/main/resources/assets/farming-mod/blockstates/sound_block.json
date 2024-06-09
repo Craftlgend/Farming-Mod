@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "farming-mod:block/sound_block"
+        }
+    }
+}

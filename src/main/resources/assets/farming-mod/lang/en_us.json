@@ -3,5 +3,7 @@
     "itemgroup.ruby": "ExampleGroup",
     "block.farming-mod.ruby_block": "Block of Ruby",
     "item.farming-mod.metal_detector": "Metal Detector",
-    "item.farming-mod.tomato": "Tomato"
+    "item.farming-mod.tomato": "Tomato",
+    "block.farming-mod.sound_block": "Soundblock",
+    "item.farming-mod.coal_briquette": "Coal Briquette"
 }

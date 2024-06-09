@@ -1,6 +1,7 @@
 package de.craftlegend.farmingmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,5 +19,7 @@ public class FarmingMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 500);
 	}
 }

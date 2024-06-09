@@ -19,6 +19,8 @@ public class ModItemGroups {
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModItems.TOMATO);
+                        entries.add(ModBlocks.SOUND_BLOCK);
+                        entries.add(ModItems.COAL_BRIQUETTE);
                     }).build());
 
 

@@ -1,6 +1,7 @@
 package de.craftlegend.farmingmod.block;
 
 import de.craftlegend.farmingmod.FarmingMod;
+import de.craftlegend.farmingmod.block.custom.SoundBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
@@ -12,6 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block RUBY_BLOCK = registerBlock("ruby_block", new Block(Block.Settings.copy(Blocks.IRON_BLOCK)));
+    public static final Block SOUND_BLOCK = registerBlock("sound_block", new SoundBlock(SoundBlock.Settings.copy(Blocks.IRON_BLOCK)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
