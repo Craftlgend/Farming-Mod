@@ -2,6 +2,7 @@ package de.craftlegend.farmingmod.item.custom;
 
 import java.util.List;
 
+import de.craftlegend.farmingmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -53,7 +54,7 @@ public class MetalDetectorItem extends Item{
         player.sendMessage(Text.literal("Found " + block.asItem().getName().getString() + " at (" + BlockPos.getX() + ", " + BlockPos.getY() + ", " + BlockPos.getZ() + ")"), false);
     }
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.DIAMOND_ORE);
+        return state.isIn(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS);
     }
 
     @Override
