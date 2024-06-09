@@ -2,7 +2,7 @@ package de.craftlegend.farmingmod.item;
 
 
 import de.craftlegend.farmingmod.FarmingMod;
-import de.craftlegend.farmingmod.item.costom.MetalDetectorItem;
+import de.craftlegend.farmingmod.item.custom.MetalDetectorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;

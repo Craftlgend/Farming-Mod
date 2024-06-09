@@ -1,4 +1,4 @@
-package de.craftlegend.farmingmod.item.costom;
+package de.craftlegend.farmingmod.item.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
