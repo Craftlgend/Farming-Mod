@@ -1,18 +1,12 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "category": "misc",
-    "pattern":[
-        "###",
-        "###",
-        "###"
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "farming-mod:ruby_block"
+      }
     ],
-    "key": {
-        "#":{
-            "item":"farming-mod: ruby"
-        }
-    },
     "result": {
-        "item": "farming-mod: ruby_block",
-        "count": 1
+      "count": 9,
+      "id": "farming-mod:ruby"
     }
 }

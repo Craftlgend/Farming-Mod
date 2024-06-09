@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#":{
+            "item":"farming-mod:ruby"
+        }
+    },
+    "result": {
+        "id": "farming-mod:ruby_block",
+        "count": 1
+    }
+}
