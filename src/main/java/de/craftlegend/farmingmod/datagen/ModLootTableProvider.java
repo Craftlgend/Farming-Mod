@@ -9,8 +9,9 @@ import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider{
 
-    public ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<WrapperLookup> registriesFuture) {
-        super(dataOutput, registriesFuture);
+
+    public ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     @Override
