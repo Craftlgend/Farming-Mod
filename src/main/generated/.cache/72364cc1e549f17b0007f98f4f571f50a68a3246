@@ -1,6 +1,9 @@
-// 1.20.6	2024-06-19T17:27:18.1429421	Farming Mod/Tags for minecraft:block
+// 1.20.6	2024-06-20T16:20:21.5149617	Farming Mod/Tags for minecraft:block
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\blocks\needs_diamond_tool.json
 39c541a023032e0a79288c3bf6502c4640b2d628 data\minecraft\tags\blocks\mineable\pickaxe.json
+fae5a0127b66f30d270a4bcc8446463ad99b3e0f data\minecraft\tags\blocks\walls.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\blocks\needs_iron_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\blocks\needs_stone_tool.json
+39d7db947c669cd43f0f6f18cf37bba788a1f65f data\minecraft\tags\blocks\fences.json
+4f3abc5cc21e24ef8b3b77eef431cfd4feeead83 data\minecraft\tags\blocks\fence_gates.json
 ccf1d00309fa893a1411709c059ab277be4ac35f data\farming-mod\tags\blocks\metal_detector_detectable_blocks.json

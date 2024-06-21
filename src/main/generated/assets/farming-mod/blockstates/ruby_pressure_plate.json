@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "farming-mod:block/ruby_pressure_plate"
+    },
+    "powered=true": {
+      "model": "farming-mod:block/ruby_pressure_plate_down"
+    }
+  }
+}

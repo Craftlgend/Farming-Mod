@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "farming-mod:block/ruby_block",
+    "side": "farming-mod:block/ruby_block",
+    "top": "farming-mod:block/ruby_block"
+  }
+}

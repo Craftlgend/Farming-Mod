@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "farming-mod:block/ruby_slab"
+    },
+    "type=double": {
+      "model": "farming-mod:block/ruby_block"
+    },
+    "type=top": {
+      "model": "farming-mod:block/ruby_slab_top"
+    }
+  }
+}

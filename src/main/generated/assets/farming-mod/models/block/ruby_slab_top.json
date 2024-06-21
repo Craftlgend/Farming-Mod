@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "farming-mod:block/ruby_block",
+    "side": "farming-mod:block/ruby_block",
+    "top": "farming-mod:block/ruby_block"
+  }
+}
