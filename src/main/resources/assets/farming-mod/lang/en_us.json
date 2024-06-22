@@ -7,6 +7,9 @@
     "block.farming-mod.sound_block": "Soundblock",
     "item.farming-mod.coal_briquette": "Coal Briquette",
     "tooltip.farming-mod.metal_detector.tooltip": "Finds Valuables underground",
+
+
+
     "block.farming-mod.ruby_stairs": "Ruby Stairs",
     "block.farming-mod.ruby_slab": "Ruby Slab",
     "block.farming-mod.ruby_button": "Ruby Button",
@@ -15,10 +18,19 @@
     "block.farming-mod.ruby_fence_gate": "Ruby Fence Gate",
     "block.farming-mod.ruby_door": "Ruby Door",
     "block.farming-mod.ruby_trapdoor": "Ruby Trapdoor",
+
+
     "item.farming-mod.ruby_staff": "Ruby Staff",
     "item.farming-mod.ruby_pickaxe": "Ruby Pickaxe",
     "item.farming-mod.ruby_axe": "Ruby Axe",
     "item.farming-mod.ruby_shovel": "Ruby Shovel",
     "item.farming-mod.ruby_sword": "Ruby Sword",
-    "item.farming-mod.ruby_hoe": "Ruby Hoe"
+    "item.farming-mod.ruby_hoe": "Ruby Hoe",
+
+
+
+    "item.farming-mod.ruby_helmet": "Ruby Helmet",
+    "item.farming-mod.ruby_chestplate": "Ruby Chestplate",
+    "item.farming-mod.ruby_leggings": "Ruby Leggings",
+    "item.farming-mod.ruby_boots": "Ruby Boots"
 }

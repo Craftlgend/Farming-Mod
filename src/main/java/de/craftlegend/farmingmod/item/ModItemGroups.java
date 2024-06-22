@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOMATO);
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModItems.COAL_BRIQUETTE);
+                        //region variants
                         entries.add(ModBlocks.RUBY_STAIRS);
                         entries.add(ModBlocks.RUBY_SLAB);
                         entries.add(ModBlocks.RUBY_FENCE);
@@ -30,12 +31,21 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_PRESSURE_PLATE);
                         entries.add(ModBlocks.RUBY_DOOR);
                         entries.add(ModBlocks.RUBY_TRAPDOOR);
+                        //endregion
+                        //region tools
                         entries.add(ModItems.RUBY_STAFF);
                         entries.add(ModItems.RUBY_PICKAXE);
                         entries.add(ModItems.RUBY_AXE);
                         entries.add(ModItems.RUBY_SWORD);
                         entries.add(ModItems.RUBY_SHOVEL);
                         entries.add(ModItems.RUBY_HOE);
+                        //endregion
+                        //region armor
+                        entries.add(ModItems.RUBY_HELMET);
+                        entries.add(ModItems.RUBY_CHESTPLATE);
+                        entries.add(ModItems.RUBY_LEGGINGS);
+                        entries.add(ModItems.RUBY_BOOTS);
+                        //endregion
                     }).build());
 
 
