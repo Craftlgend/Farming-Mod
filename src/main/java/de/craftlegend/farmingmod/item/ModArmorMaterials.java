@@ -20,7 +20,7 @@ import java.util.function.Supplier;
 
 
 public class ModArmorMaterials  {
-    public static final RegistryEntry RUBY = register("ruby", Util.make(new EnumMap(ArmorItem.Type.class), map -> {
+    public static final RegistryEntry<ArmorMaterial> RUBY = register("ruby", Util.make(new EnumMap(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 3);
         map.put(ArmorItem.Type.LEGGINGS, 6);
         map.put(ArmorItem.Type.CHESTPLATE, 9);
