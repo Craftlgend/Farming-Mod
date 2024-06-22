@@ -1,11 +1,11 @@
-// 1.20.6	2024-06-20T16:20:21.5189418	Farming Mod/Block Loot Tables
+// 1.20.6	2024-06-21T20:00:55.3981178	Farming Mod/Block Loot Tables
 144fda206cc6676e2f38535e4297e2045f125fac data\farming-mod\loot_tables\blocks\ruby_fence_gate.json
 e5cc397bd7cf44f85296ff169facc4149f766d08 data\farming-mod\loot_tables\blocks\ruby_door.json
-94bb1f0fecccc4f9e182f07bfd866c6c91db5264 data\farming-mod\loot_tables\blocks\ruby_wall.json
 54276976a61c01d4138e90de7de4dafa2b246483 data\farming-mod\loot_tables\blocks\ruby_block.json
+94bb1f0fecccc4f9e182f07bfd866c6c91db5264 data\farming-mod\loot_tables\blocks\ruby_wall.json
 ba80b14a43d629a7f9d173980dc851e0a6ff121c data\farming-mod\loot_tables\blocks\ruby_trapdoor.json
 728e76d027df3c0cc49d21a36ca716a93f3e125a data\farming-mod\loot_tables\blocks\ruby_button.json
-94c003d47962b34ff396569aaa873b76e5b79321 data\farming-mod\loot_tables\blocks\ruby_slab.json
 4e982e06cf09fd3d675993c7516887787393143d data\farming-mod\loot_tables\blocks\sound_block.json
+94c003d47962b34ff396569aaa873b76e5b79321 data\farming-mod\loot_tables\blocks\ruby_slab.json
 3314884a2f6db72078644b7bc413fd275f57d8c2 data\farming-mod\loot_tables\blocks\ruby_stairs.json
 63a4ee032ff603505f477a439f2d33941d3f74c4 data\farming-mod\loot_tables\blocks\ruby_fence.json
