@@ -16,6 +16,7 @@ public class ModBlocks {
             new SoundBlock(SoundBlock.Settings.copy(Blocks.IRON_BLOCK)));
     public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
             new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(), Block.Settings.copy(Blocks.IRON_BLOCK)));
+    //region variants
     public static final Block RUBY_SLAB = registerBlock("ruby_slab",
             new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)));
     public static final Block RUBY_BUTTON = registerBlock("ruby_button",
@@ -32,6 +33,7 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.IRON, Block.Settings.copy(Blocks.IRON_BLOCK).nonOpaque()));
     public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON, Block.Settings.copy(Blocks.IRON_BLOCK).nonOpaque()));
+    //endregion
 
 
     private static Block registerBlock(String name, Block block){
