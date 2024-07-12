@@ -51,6 +51,6 @@ public class ModItemGroups {
 
 
     public static void registerItemGroups(){
-        FarmingMod.LOGGER.info("Registering Item Groups for"+FarmingMod.MOD_ID);
+        FarmingMod.LOGGER.info("Registering Item Groups for "+FarmingMod.MOD_ID);
     }
 }

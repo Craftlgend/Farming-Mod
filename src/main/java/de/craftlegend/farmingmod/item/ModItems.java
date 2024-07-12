@@ -48,7 +48,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        FarmingMod.LOGGER.info("Registering Mod Items for" + FarmingMod.MOD_ID);
+        FarmingMod.LOGGER.info("Registering Mod Items for " + FarmingMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }

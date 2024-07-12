@@ -51,6 +51,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks(){
-        FarmingMod.LOGGER.info("Registering ModBlocks for"+FarmingMod.MOD_ID);   
+        FarmingMod.LOGGER.info("Registering ModBlocks for "+FarmingMod.MOD_ID);
     }
 }
