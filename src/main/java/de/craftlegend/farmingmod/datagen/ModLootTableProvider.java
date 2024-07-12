@@ -3,8 +3,12 @@ package de.craftlegend.farmingmod.datagen;
 import java.util.concurrent.CompletableFuture;
 
 import de.craftlegend.farmingmod.block.ModBlocks;
+import de.craftlegend.farmingmod.block.custom.TomatoCropBlock;
+import de.craftlegend.farmingmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider{
@@ -27,6 +31,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider{
         addDrop(ModBlocks.RUBY_WALL);
         addDrop(ModBlocks.RUBY_TRAPDOOR);
 
+        BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(TomatoCropBlock.AGE, 5));
+        addDrop(ModBlocks.TOMATO_CROP, cropDrops(ModBlocks.TOMATO_CROP, ModItems.TOMATO, ModItems.TOMATO_SEEDS, builder));
         
     }
 

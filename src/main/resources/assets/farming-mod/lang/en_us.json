@@ -4,6 +4,8 @@
     "block.farming-mod.ruby_block": "Block of Ruby",
     "item.farming-mod.metal_detector": "Metal Detector",
     "item.farming-mod.tomato": "Tomato",
+    "item.farming-mod.tomato_seeds": "Tomato Seeds",
+    "block.farming-mod.tomato_crop": "Tomato Plant",
     "block.farming-mod.sound_block": "Soundblock",
     "item.farming-mod.coal_briquette": "Coal Briquette",
     "tooltip.farming-mod.metal_detector.tooltip": "Finds Valuables underground",

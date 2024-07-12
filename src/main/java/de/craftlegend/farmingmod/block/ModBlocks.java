@@ -2,6 +2,7 @@ package de.craftlegend.farmingmod.block;
 
 import de.craftlegend.farmingmod.FarmingMod;
 import de.craftlegend.farmingmod.block.custom.SoundBlock;
+import de.craftlegend.farmingmod.block.custom.TomatoCropBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -34,6 +35,9 @@ public class ModBlocks {
     public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON, Block.Settings.copy(Blocks.IRON_BLOCK).nonOpaque()));
     //endregion
+
+    public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK, new Identifier(FarmingMod.MOD_ID, "tomato_crop"),
+            new TomatoCropBlock(Block.Settings.copy(Blocks.WHEAT)));
 
 
     private static Block registerBlock(String name, Block block){

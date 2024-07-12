@@ -2,6 +2,7 @@ package de.craftlegend.farmingmod.item;
 
 
 import de.craftlegend.farmingmod.FarmingMod;
+import de.craftlegend.farmingmod.block.ModBlocks;
 import de.craftlegend.farmingmod.item.custom.MetalDetectorItem;
 import de.craftlegend.farmingmod.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -17,6 +18,7 @@ public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new Item.Settings().maxDamage(64)));
     public static final Item TOMATO = registerItem("tomato", new Item(new Item.Settings().food(ModFoodComponents.TOMATO)));
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds", new AliasedBlockItem(ModBlocks.TOMATO_CROP, new Item.Settings()));
     public static final Item COAL_BRIQUETTE = registerItem("coal_briquette", new Item(new Item.Settings()));
     //region tools
     public static final Item RUBY_STAFF = registerItem("ruby_staff", new Item(new Item.Settings().maxCount(1)));
