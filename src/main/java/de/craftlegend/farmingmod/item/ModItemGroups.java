@@ -24,6 +24,7 @@ public class ModItemGroups {
                         entries.add(ModItems.COAL_BRIQUETTE);
                         entries.add(ModItems.CORN_SEEDS);
                         entries.add(ModItems.CORN);
+                        entries.add(ModBlocks.DAHLIA);
                         //region variants
                         entries.add(ModBlocks.RUBY_STAIRS);
                         entries.add(ModBlocks.RUBY_SLAB);

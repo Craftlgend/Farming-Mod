@@ -5,6 +5,7 @@ import de.craftlegend.farmingmod.block.custom.CornCropBlock;
 import de.craftlegend.farmingmod.block.custom.SoundBlock;
 import de.craftlegend.farmingmod.block.custom.TomatoCropBlock;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -43,11 +44,17 @@ public class ModBlocks {
     public static final Block CORN_CROP = Registry.register(Registries.BLOCK, new Identifier(FarmingMod.MOD_ID, "corn_crop"),
             new CornCropBlock(Block.Settings.copy(Blocks.WHEAT)));
 
+    public static final Block DAHLIA = registerBlock("dahlia",
+            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 10, Block.Settings.copy(Blocks.ALLIUM).nonOpaque().noCollision()));
+    public static final Block POTTED_DAHLIA = Registry.register(Registries.BLOCK, new Identifier(FarmingMod.MOD_ID, "potted_dahlia"),
+            new FlowerPotBlock(DAHLIA, Block.Settings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(FarmingMod.MOD_ID, name), block);
     }
+
 
     private static Item registerBlockItem(String name, Block block){
         return Registry.register(Registries.ITEM, new Identifier(FarmingMod.MOD_ID, name), 
