@@ -36,6 +36,11 @@ public class ModItems {
     public static final Item RUBY_BOOTS = registerItem("ruby_boots", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS,new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(45))));
     //endregion
 
+    public static final Item CORN = registerItem("corn", new Item(new Item.Settings()));
+    public static final Item CORN_SEEDS = registerItem("corn_seeds", new AliasedBlockItem(ModBlocks.CORN_CROP, new Item.Settings()));
+
+
+
 
 
 

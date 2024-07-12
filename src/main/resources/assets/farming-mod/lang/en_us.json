@@ -10,6 +10,10 @@
     "item.farming-mod.coal_briquette": "Coal Briquette",
     "tooltip.farming-mod.metal_detector.tooltip": "Finds Valuables underground",
 
+    "item.farming-mod.corn": "Corn",
+    "item.farming-mod.corn_seeds": "Corn Seeds",
+    "blocks.farming-mod.corn_crop": "Corn Plant",
+
 
 
     "block.farming-mod.ruby_stairs": "Ruby Stairs",

@@ -1,6 +1,7 @@
 package de.craftlegend.farmingmod.block;
 
 import de.craftlegend.farmingmod.FarmingMod;
+import de.craftlegend.farmingmod.block.custom.CornCropBlock;
 import de.craftlegend.farmingmod.block.custom.SoundBlock;
 import de.craftlegend.farmingmod.block.custom.TomatoCropBlock;
 import net.minecraft.block.*;
@@ -38,6 +39,9 @@ public class ModBlocks {
 
     public static final Block TOMATO_CROP = Registry.register(Registries.BLOCK, new Identifier(FarmingMod.MOD_ID, "tomato_crop"),
             new TomatoCropBlock(Block.Settings.copy(Blocks.WHEAT)));
+
+    public static final Block CORN_CROP = Registry.register(Registries.BLOCK, new Identifier(FarmingMod.MOD_ID, "corn_crop"),
+            new CornCropBlock(Block.Settings.copy(Blocks.WHEAT)));
 
 
     private static Block registerBlock(String name, Block block){
