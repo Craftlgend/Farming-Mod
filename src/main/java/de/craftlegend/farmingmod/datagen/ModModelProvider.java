@@ -1,6 +1,7 @@
 package de.craftlegend.farmingmod.datagen;
 
 import de.craftlegend.farmingmod.block.ModBlocks;
+import de.craftlegend.farmingmod.block.custom.TomatoCropBlock;
 import de.craftlegend.farmingmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -31,6 +32,7 @@ public class ModModelProvider extends FabricModelProvider{
 
         blockStateModelGenerator.registerDoor(ModBlocks.RUBY_DOOR);
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.RUBY_TRAPDOOR);
+        blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
     }
 
     @Override
