@@ -26,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CORN);
                         entries.add(ModBlocks.DAHLIA);
                         entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
+                        entries.add(ModItems.PORCUPINE_SPAWN_EGG);
                         //region variants
                         entries.add(ModBlocks.RUBY_STAIRS);
                         entries.add(ModBlocks.RUBY_SLAB);

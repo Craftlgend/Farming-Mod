@@ -3,6 +3,7 @@ package de.craftlegend.farmingmod.item;
 
 import de.craftlegend.farmingmod.FarmingMod;
 import de.craftlegend.farmingmod.block.ModBlocks;
+import de.craftlegend.farmingmod.entity.ModEntities;
 import de.craftlegend.farmingmod.item.custom.MetalDetectorItem;
 import de.craftlegend.farmingmod.item.custom.ModArmorItem;
 import de.craftlegend.farmingmod.sound.ModSounds;
@@ -41,6 +42,9 @@ public class ModItems {
     public static final Item CORN_SEEDS = registerItem("corn_seeds", new AliasedBlockItem(ModBlocks.CORN_CROP, new Item.Settings()));
 
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc", new MusicDiscItem(7, ModSounds.BAR_BRAWL, new Item.Settings().maxCount(1), 122));
+
+    public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
+            new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new Item.Settings()));
 
 
 
