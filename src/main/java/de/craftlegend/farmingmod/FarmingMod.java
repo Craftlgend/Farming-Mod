@@ -2,6 +2,7 @@ package de.craftlegend.farmingmod;
 
 import de.craftlegend.farmingmod.util.ModCustomTrades;
 import de.craftlegend.farmingmod.util.ModLootTableModifiers;
+import de.craftlegend.farmingmod.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 
@@ -23,6 +24,7 @@ public class FarmingMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModLootTableModifiers.modifyLootTables();
 		ModCustomTrades.registerCustomTrades();
+		ModVillagers.registerVillager();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 500);
 	}

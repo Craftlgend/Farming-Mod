@@ -1,6 +1,8 @@
 package de.craftlegend.farmingmod.util;
 
+import de.craftlegend.farmingmod.block.ModBlocks;
 import de.craftlegend.farmingmod.item.ModItems;
+import de.craftlegend.farmingmod.villager.ModVillagers;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.enchantment.EnchantmentLevelEntry;
 import net.minecraft.enchantment.Enchantments;
@@ -28,6 +30,14 @@ public class ModCustomTrades {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(ModItems.RUBY, 24),
                     EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(Enchantments.PIERCING, 2)),
+                    2, 16, 0.81f));
+
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.SOUND_MASTER, 1, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new TradedItem(ModItems.RUBY, 6),
+                    new ItemStack(ModBlocks.SOUND_BLOCK, 3),
                     2, 16, 0.81f));
 
         });

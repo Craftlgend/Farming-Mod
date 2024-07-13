@@ -1,10 +1,6 @@
 package de.craftlegend.farmingmod;
 
-import de.craftlegend.farmingmod.datagen.ModBlockTagProvider;
-import de.craftlegend.farmingmod.datagen.ModItemTagProvider;
-import de.craftlegend.farmingmod.datagen.ModLootTableProvider;
-import de.craftlegend.farmingmod.datagen.ModModelProvider;
-import de.craftlegend.farmingmod.datagen.ModRecipeProvider;
+import de.craftlegend.farmingmod.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -18,5 +14,6 @@ public class FarmingModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModPoiTagProvider::new);
 	}
 }
