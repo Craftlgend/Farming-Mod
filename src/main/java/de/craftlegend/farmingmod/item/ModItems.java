@@ -5,6 +5,7 @@ import de.craftlegend.farmingmod.FarmingMod;
 import de.craftlegend.farmingmod.block.ModBlocks;
 import de.craftlegend.farmingmod.item.custom.MetalDetectorItem;
 import de.craftlegend.farmingmod.item.custom.ModArmorItem;
+import de.craftlegend.farmingmod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -38,6 +39,8 @@ public class ModItems {
 
     public static final Item CORN = registerItem("corn", new Item(new Item.Settings()));
     public static final Item CORN_SEEDS = registerItem("corn_seeds", new AliasedBlockItem(ModBlocks.CORN_CROP, new Item.Settings()));
+
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc", new MusicDiscItem(7, ModSounds.BAR_BRAWL, new Item.Settings().maxCount(1), 122));
 
 
 

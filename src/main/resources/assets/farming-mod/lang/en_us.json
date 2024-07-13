@@ -12,6 +12,10 @@
     "block.farming-mod.dahlia": "Dahlia",
     "entity.minecraft.villager.sound_master": "Soundmaster",
     "sounds.farming-mod.metal_detector_found_ore": "Metal Detector Jingle",
+    "item.farming-mod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+    "item.farming-mod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+
 
     "item.farming-mod.corn": "Corn",
     "item.farming-mod.corn_seeds": "Corn Seeds",

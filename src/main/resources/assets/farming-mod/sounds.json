@@ -34,5 +34,13 @@
     "sounds": [
       "farming-mod:sound_block_fall"
     ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "farming-mod:bar_brawl",
+        "stream": true
+      }
+    ]
   }
 }
