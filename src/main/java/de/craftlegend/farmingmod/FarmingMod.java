@@ -1,5 +1,6 @@
 package de.craftlegend.farmingmod;
 
+import de.craftlegend.farmingmod.sound.ModSounds;
 import de.craftlegend.farmingmod.util.ModCustomTrades;
 import de.craftlegend.farmingmod.util.ModLootTableModifiers;
 import de.craftlegend.farmingmod.villager.ModVillagers;
@@ -25,6 +26,7 @@ public class FarmingMod implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 		ModCustomTrades.registerCustomTrades();
 		ModVillagers.registerVillager();
+		ModSounds.registerSounds();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 500);
 	}

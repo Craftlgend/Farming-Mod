@@ -1,0 +1,38 @@
+{
+  "metal_detector_found_ore": {
+    "subtitle": "sounds.farming-mod.metal_detector_found_ore",
+    "sounds": [
+      "farming-mod:metal_detector_found_ore"
+    ]
+  },
+  "sound_block_break": {
+    "subtitle": "sounds.farming-mod.sound_block_break",
+    "sounds": [
+      "farming-mod:sound_block_break"
+    ]
+  },
+  "sound_block_step": {
+    "subtitle": "sounds.farming-mod.sound_block_step",
+    "sounds": [
+      "farming-mod:sound_block_step"
+    ]
+  },
+  "sound_block_place": {
+    "subtitle": "sounds.farming-mod.sound_block_place",
+    "sounds": [
+      "farming-mod:sound_block_place"
+    ]
+  },
+  "sound_block_hit": {
+    "subtitle": "sounds.farming-mod.sound_block_hit",
+    "sounds": [
+      "farming-mod:sound_block_hit"
+    ]
+  },
+  "sound_block_fall": {
+    "subtitle": "sounds.farming-mod.sound_block_fall",
+    "sounds": [
+      "farming-mod:sound_block_fall"
+    ]
+  }
+}

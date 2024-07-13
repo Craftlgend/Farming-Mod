@@ -11,6 +11,7 @@
     "tooltip.farming-mod.metal_detector.tooltip": "Finds Valuables underground",
     "block.farming-mod.dahlia": "Dahlia",
     "entity.minecraft.villager.sound_master": "Soundmaster",
+    "sounds.farming-mod.metal_detector_found_ore": "Metal Detector Jingle",
 
     "item.farming-mod.corn": "Corn",
     "item.farming-mod.corn_seeds": "Corn Seeds",

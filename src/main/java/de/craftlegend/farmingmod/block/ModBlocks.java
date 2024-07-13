@@ -4,6 +4,7 @@ import de.craftlegend.farmingmod.FarmingMod;
 import de.craftlegend.farmingmod.block.custom.CornCropBlock;
 import de.craftlegend.farmingmod.block.custom.SoundBlock;
 import de.craftlegend.farmingmod.block.custom.TomatoCropBlock;
+import de.craftlegend.farmingmod.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
@@ -16,7 +17,7 @@ public class ModBlocks {
 
     public static final Block RUBY_BLOCK = registerBlock("ruby_block", new Block(Block.Settings.copy(Blocks.IRON_BLOCK)));
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
-            new SoundBlock(SoundBlock.Settings.copy(Blocks.IRON_BLOCK)));
+            new SoundBlock(SoundBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(ModSounds.SOUND_BLOCK_SOUNDS)));
     public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
             new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(), Block.Settings.copy(Blocks.IRON_BLOCK)));
     //region variants
