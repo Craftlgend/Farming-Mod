@@ -4,6 +4,7 @@ import net.minecraft.client.render.entity.animation.Animation;
 import net.minecraft.client.render.entity.animation.AnimationHelper;
 import net.minecraft.client.render.entity.animation.Keyframe;
 import net.minecraft.client.render.entity.animation.Transformation;
+import net.minecraft.entity.data.DataTracker;
 
 public class ModAnimations {
     public static final Animation PORCUPINE_WALK = Animation.Builder.create(2.5f).looping()
@@ -461,3 +462,5 @@ public class ModAnimations {
                             new Keyframe(0f, AnimationHelper.createRotationalVector(5f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR))).build();
 }
+
+

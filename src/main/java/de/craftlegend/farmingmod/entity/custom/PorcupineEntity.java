@@ -1,15 +1,17 @@
 package de.craftlegend.farmingmod.entity.custom;
 
 import de.craftlegend.farmingmod.entity.ModEntities;
+import de.craftlegend.farmingmod.entity.ai.PorcupineAttackGoal;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.brain.task.BreedTask;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
-import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.data.DataTracker;
+import net.minecraft.entity.data.TrackedData;
+import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
@@ -24,15 +26,18 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class PorcupineEntity extends AnimalEntity {
+    private static final TrackedData<Boolean> ATTACKING =
+            DataTracker.registerData(PorcupineEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
 
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
+    public final AnimationState attackAnimationState = new AnimationState();
+    public int attackAnimationTimeout = 0;
 
     public PorcupineEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
-
 
     private void setupAnimationStates() {
         if (this.idleAnimationTimeout <= 0) {
@@ -41,8 +46,18 @@ public class PorcupineEntity extends AnimalEntity {
         } else {
             --this.idleAnimationTimeout;
         }
-    }
 
+        if(this.isAttacking() && attackAnimationTimeout <= 0) {
+            attackAnimationTimeout = 40;
+            attackAnimationState.start(this.age);
+        } else {
+            --this.attackAnimationTimeout;
+        }
+
+        if(!this.isAttacking()) {
+            attackAnimationState.stop();
+        }
+    }
 
     @Override
     protected void updateLimbs(float posDelta) {
@@ -53,7 +68,7 @@ public class PorcupineEntity extends AnimalEntity {
     @Override
     public void tick() {
         super.tick();
-        if (this.getWorld().isClient()) {
+        if(this.getWorld().isClient()) {
             setupAnimationStates();
         }
     }
@@ -61,12 +76,19 @@ public class PorcupineEntity extends AnimalEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
+
+        this.goalSelector.add(1, new PorcupineAttackGoal(this, 1D, true));
+
         this.goalSelector.add(1, new AnimalMateGoal(this, 1.15D));
         this.goalSelector.add(2, new TemptGoal(this, 1.25D, Ingredient.ofItems(Items.BEETROOT), false));
+
         this.goalSelector.add(3, new FollowParentGoal(this, 1.15D));
+
         this.goalSelector.add(4, new WanderAroundFarGoal(this, 1D));
         this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
-        this.goalSelector.add(4, new LookAroundGoal(this));
+        this.goalSelector.add(6, new LookAroundGoal(this));
+
+        this.targetSelector.add(1, new RevengeGoal(this));
     }
 
     public static DefaultAttributeContainer.Builder createPorcupineAttributes() {
@@ -77,10 +99,19 @@ public class PorcupineEntity extends AnimalEntity {
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 2);
     }
 
-    @Nullable
+    public void setAttacking(boolean attacking) {
+        this.dataTracker.set(ATTACKING, attacking);
+    }
+
     @Override
-    public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return ModEntities.PORCUPINE.create(world);
+    public boolean isAttacking() {
+        return this.dataTracker.get(ATTACKING);
+    }
+
+    @Override
+    protected void initDataTracker(DataTracker.Builder builder) {
+        super.initDataTracker(builder);
+        builder.add(ATTACKING, false);
     }
 
     @Override
@@ -88,6 +119,11 @@ public class PorcupineEntity extends AnimalEntity {
         return stack.isOf(Items.BEETROOT);
     }
 
+    @Nullable
+    @Override
+    public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
+        return ModEntities.PORCUPINE.create(world);
+    }
 
     @Nullable
     @Override
